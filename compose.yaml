@@ -1,0 +1,5 @@
+services:
+  sse:
+    image: aldrismcloud/rwaldi-go-sse:latest
+    ports:
+      - "9737:9737"
