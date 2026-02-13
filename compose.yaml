@@ -2,4 +2,8 @@ services:
   sse:
     image: aldrismcloud/rwaldi-go-sse:latest
     ports:
-      - "9737:9737"
+    # - custom port:sse port
+    # the custom port automatically redirect to sse port
+    # in this case the container only accessible by 6969 port, but still will connect to 9737 when inside the container
+    # cmiiw
+      - "6969:9737"
